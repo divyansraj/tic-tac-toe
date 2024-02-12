@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Play', sans-serif;
+}
+#wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+}
+.img-container{
+    background: linear-gradient(135deg, #8052ec, #d161ff);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.game-info{
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    background-color: #ffffff6f;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* background-color: rgba(255, 255, 255, 0.267); */
+
+    /* width: 90%;
+    max-width: 20rem; */
+    gap: 15px;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+.block{
+    all: unset;
+    height: 80px;
+    width: 80px;
+    gap: 15px;
+    border-radius: 10px;
+    background-color: white;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.text{
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #d161ff;
+    font-family: 'Play', sans-serif;
+}
+.btn{
+    padding: 0.5rem 1rem;
+    background-color: #ffffff6f;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+    opacity: 0;
+}
+
+.win{
+    background-color: rgb(91, 235, 137);
+}
+.active{
+    opacity: 1;
+}
